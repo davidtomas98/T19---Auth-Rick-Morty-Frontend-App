@@ -10,6 +10,9 @@ import { RandomCharactersComponent } from './random-characters/random-characters
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CharacterDetailComponent } from './character-detail/character-detail.component';
 import { CharacterFormComponent } from './character-form/character-form.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,7 +29,10 @@ const routes: Routes = [
     RandomCharactersComponent,
     AboutUsComponent,
     CharacterDetailComponent,
-    CharacterFormComponent
+    CharacterFormComponent,
+    LoginComponent,
+    RegisterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
