@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthenticationService } from './services/authentication.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Rick & Morty Frontend App';
+  constructor(private authService: AuthenticationService) { }
+
+  logout(): void {
+    this.authService.logout()
+      .then(() => {
+        // Cerrar sesión exitosamente
+      })
+      .catch(error => {
+        // Mostrar mensaje de error en el cierre de sesión
+      });
+  }
 }
