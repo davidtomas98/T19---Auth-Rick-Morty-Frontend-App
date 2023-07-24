@@ -1,27 +1,33 @@
-# RickAndMortyApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+## Componentes
 
-## Development server
+El proyecto cuenta con varios componentes que son utilizados para crear las diferentes páginas y secciones de la aplicación:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- `AboutUsComponent`: Página que muestra información sobre nosotros.
+- `CharacterDetailComponent`: Página que muestra los detalles de un personaje de Rick & Morty.
+- `CharacterFormComponent`: Página para agregar un nuevo personaje de Rick & Morty.
+- `HomeComponent`: Página de inicio de la aplicación.
+- `LoginComponent`: Página de inicio de sesión.
+- `NavbarComponent`: Componente que muestra la barra de navegación con enlaces y opciones de autenticación.
+- `RandomCharactersComponent`: Página que muestra personajes aleatorios de Rick & Morty.
+- `RegisterComponent`: Página de registro de usuario.
 
-## Code scaffolding
+## Servicios
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+El proyecto cuenta con dos servicios:
 
-## Build
+- `AuthenticationService`: Servicio para manejar la autenticación de usuarios utilizando Firebase.
+- `CharacterService`: Servicio para obtener y gestionar los personajes de Rick & Morty.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Rutas y Guards
 
-## Running unit tests
+Las rutas de la aplicación están definidas en el archivo `app-routing.module.ts`. También hemos implementado un Guard de autenticación llamado `AuthGuard` para proteger rutas específicas que requieren que el usuario esté autenticado.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Instrucciones de inicio
 
-## Running end-to-end tests
+1. Clona el repositorio.
+2. Ejecuta `npm install` para instalar las dependencias.
+3. Configura la conexión a tu proyecto de Firebase en el archivo `environment.ts`.
+4. Ejecuta `ng serve` para iniciar el servidor de desarrollo. Navega a `http://localhost:4200/` para ver la aplicación en funcionamiento.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+¡Espero que esta información te sea útil! Si tienes alguna otra pregunta o necesitas más ayuda, no dudes en preguntar. ¡Buena suerte con tu proyecto de Rick & Morty!
