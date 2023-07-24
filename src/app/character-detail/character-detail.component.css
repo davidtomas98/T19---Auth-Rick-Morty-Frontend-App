@@ -1,0 +1,41 @@
+.container {
+    margin-top: 20px; /* Margen superior de 20 píxeles */
+  }
+  
+  .character-details {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente los elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+    height: 100%; /* Altura del elemento al 100% del contenedor padre */
+  }
+  
+  .card {
+    width: 300px; /* Ancho de la tarjeta de 300 píxeles */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+    text-align: center; /* Alineación del texto en el centro */
+  }
+  
+  .card-img-top {
+    width: 100%; /* Ancho de la imagen al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+  
+  .card-body {
+    padding: 10px; /* Espaciado interno de 10 píxeles */
+  }
+  
+  .card-title {
+    font-size: 24px; /* Tamaño de fuente del título de la tarjeta a 24 píxeles */
+    margin-bottom: 10px; /* Margen inferior de 10 píxeles para el título */
+  }
+  
+  .card-text {
+    font-size: 16px; /* Tamaño de fuente del texto de la tarjeta a 16 píxeles */
+    margin-bottom: 5px; /* Margen inferior de 5 píxeles para el texto */
+  }
+  
+  .loading-message {
+    font-size: 18px; /* Tamaño de fuente del mensaje de carga a 18 píxeles */
+    color: gray; /* Color de texto gris para el mensaje de carga */
+  }
+  

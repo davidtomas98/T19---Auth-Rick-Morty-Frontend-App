@@ -1,0 +1,40 @@
+.container {
+  margin-top: 20px; /* Margen superior de 20 píxeles */
+}
+
+.card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+}
+
+.card-img-top {
+  height: auto; /* Altura automática para mantener la proporción */
+  width: 100%; /* Ancho del 100% para llenar el contenedor */
+  object-fit: cover; /* Ajuste del tamaño de la imagen para cubrir el contenedor */
+}
+
+.card-body {
+  padding: 10px; /* Espaciado interno de 10 píxeles */
+}
+
+.card-title {
+  font-size: 16px; /* Tamaño de fuente del título de la tarjeta a 16 píxeles */
+  margin-bottom: 10px; /* Margen inferior de 10 píxeles para el título */
+}
+
+.btn-orange {
+  background-color: orange; /* Color de fondo naranja */
+  color: black; /* Color del texto negro */
+}
+
+.btn-orange:hover {
+  background-color: darkorange; /* Color de fondo naranja oscuro al pasar el cursor */
+}
+
+.btn-block {
+  display: block; /* Mostrar como bloque para ocupar el ancho completo */
+  width: 100%; /* Ancho del 100% */
+}
+
+.mb-4 {
+  margin-bottom: 1rem; /* Margen inferior de 1 rem (16 píxeles) */
+}

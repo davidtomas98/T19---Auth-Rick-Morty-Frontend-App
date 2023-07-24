@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="character-details">
+      <div *ngIf="character" class="card">
+        <img [src]="character.image" alt="Character Image" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">{{ character.name }}</h5> <!-- Título del personaje -->
+          <p class="card-text">Status: {{ character.status }}</p> <!-- Estado del personaje -->
+          <p class="card-text">Species: {{ character.species }}</p> <!-- Especie del personaje -->
+          <p class="card-text">Gender: {{ character.gender }}</p> <!-- Género del personaje -->
+          <p class="card-text">Origin: {{ character.origin.name }}</p> <!-- Origen del personaje -->
+          <p class="card-text">Location: {{ character.location.name }}</p> <!-- Ubicación del personaje -->
+        </div>
+      </div>
+      <div *ngIf="!character" class="loading-message">Loading character details...</div> <!-- Mensaje de carga -->
+    </div>
+  </div>
+  

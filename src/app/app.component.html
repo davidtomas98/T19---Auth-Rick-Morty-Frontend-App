@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Rick & Morty App</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/random-characters">Random Characters</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/about-us">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/character-form">Add Character</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container mt-4">
+  <router-outlet></router-outlet>
+</div>
